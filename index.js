@@ -11,7 +11,7 @@ app.get('/all',(req,resp)=>{
 
 app.post('/add',(req,resp)=>{
     console.log(req.body)
-    resp.json({message:'post request received',data:req.body})
+    resp.json({message:'post request received',details:req.body})
 })
 
 const PORT=process.env.PORT||8080;
